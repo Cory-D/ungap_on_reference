@@ -65,7 +65,7 @@ AAACGGAG
 
 Example files included in repository:
 
-mammal_ND5_protein_G_INS_i.fasta - an input alignment of ND5 protein sequences (mammalian, and a single reptile, Anolis punctatus).
+mammal_ND5_protein_G_INS_i.fasta - an input alignment of ND5 protein sequences (mammalian, as well as a sequence from a single reptile, Anolis punctatus).
 
 mammal_ND5_protein_ungap_NC_006853_1_Bos_taurus.fasta - the input alignment ungapped by the Bos taurus reference ("python ungap_on_reference.py -i mammal_ND5_protein_G_INS_i.fasta -o mammal_ND5_protein_ungap_NC_006853_1_Bos_taurus.fasta -r NC_006853_1_Bos_taurus")
 

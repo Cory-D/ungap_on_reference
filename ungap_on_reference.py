@@ -23,7 +23,8 @@ print('Version: ' + version +'\n')
 print('This software removes alignment columns from a FASTA multiple sequence alignment based upon gap locations within the reference sequence.\n')
 print('Cory Dunn')
 print('University of Helsinki')
-print('cory.dunn@helsinki.fi\n')
+print('cory.dunn@helsinki.fi')
+print('Please cite (DOI): 10.5281/zenodo.4633159\n')
 
 
 ap = argparse.ArgumentParser()

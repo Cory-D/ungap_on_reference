@@ -12,6 +12,8 @@ Institute of Biotechnology
 University of Helsinki
 Email: cory.dunn@helsinki.fi
 
+Please cite: (DOI) 10.5281/zenodo.4633159
+
 ----
 
 License:

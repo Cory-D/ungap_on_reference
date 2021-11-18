@@ -6,7 +6,7 @@
 # Institution: University of Helsinki
 # Author Email: cory.dunn@helsinki.fi
 # License: GPLv3
-# Version: 1.2
+# Version: 1.1
 
 # Load dependencies
 
@@ -23,7 +23,7 @@ if __name__ == "__main__" :
     ap = argparse.ArgumentParser()
     ap.add_argument('-i','--input_file',required=True,type=str,help='Input alignment in FASTA format.\n')
     ap.add_argument('-o','--output_file',required=True,type=str,help="Output alignment in FASTA format.\n")
-    ap.add_argument('-r','--reference_sequence',required=True,type=str,help='Reference sequence used for alignment ungapping. Note that spaces are converted to underscores when loading input alignment.\n')
+    ap.add_argument('-r','--reference_sequence',required=True,type=str,help='Reference sequence used for alignment ungapping.\n')
 
     args = vars(ap.parse_args())
 
@@ -51,7 +51,7 @@ if __name__ == "__main__" :
     mylogs.addHandler(logfile)
     
     mylogs.info('\nUngap_on_reference')
-    version = '1.2'
+    version = '1.1'
     mylogs.info('Version: ' + version +'\n')
     mylogs.info('This software removes alignment columns from a FASTA multiple sequence alignment based upon gap locations within the reference sequence.\n')
     mylogs.info('Cory Dunn')
@@ -65,20 +65,15 @@ if __name__ == "__main__" :
 
     record_x_toward_seq_dataframe = []
     sequence_records = []
-    alignment_record_name_list_before_underscore = []
+    alignment_record_name_list = []
 
     # Load input FASTA into dataframe
 
     for record in SeqIO.parse(alignfile,"fasta"):
-
-        alignment_record_name_list_before_underscore.append(record.name)
+        alignment_record_name_list.append(record.name)
         record_x_toward_seq_dataframe = list(record.seq)
         record_x_toward_seq_dataframe_UPPER = [x.upper() for x in record_x_toward_seq_dataframe] 
         sequence_records.append(record_x_toward_seq_dataframe_UPPER)
-
-    # Space to underscore
-
-    alignment_record_name_list = list(map(lambda st: str.replace(st, " ", "_"), alignment_record_name_list_before_underscore))
 
     accession_name_dataframe = pd.DataFrame(alignment_record_name_list, columns=['Accession'])
     sequence_dataframe = pd.DataFrame(sequence_records)

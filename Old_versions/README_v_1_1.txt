@@ -2,7 +2,7 @@
 
 Ungap_on_reference: Removal of FASTA alignment columns based upon gap locations in a selected sequence
 
-Version: 1.2
+Version: 1.1
 
 ----
 
@@ -43,8 +43,6 @@ Numpy (tested under version 1.20.2)
 Usage:
 
 python ungap_on_reference.py -i <INPUT_FILE> -o <OUTPUT_FILE> -r <REFERENCE_SEQUENCE>
-
-** Note: spaces within the sequence names will be converted to underscores (' ' to '_'). For example, "Homo sapiens" to "Homo_sapiens". REFERENCE_SEQUENCE names used for ungapping should be entered accordingly.
 
 ----
 

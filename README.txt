@@ -2,18 +2,14 @@
 
 Ungap_on_reference: Removal of FASTA alignment columns based upon gap locations in a selected sequence
 
-Version: 1.2
+Version: 1.3
 
 ----
 
 Author:
 
 Cory Dunn
-Institute of Biotechnology
-University of Helsinki
-Email: cory.dunn@helsinki.fi
-
-Please cite: (DOI) 10.5281/zenodo.4633159
+https://github.com/Cory-D/
 
 ----
 
@@ -23,20 +19,13 @@ GPLv3
 
 ----
 
-Acknowledgements:
-
-Funding received from the Sigrid Jusélius Foundation, the Academy of Finland, and the Jane and Aatos Erkko Foundation contributed to the development of this software.
-
-----
-
 Requirements:
 
-ungap_on_reference is implemented in Python 3 (tested under Python version 3.9.4) 
+ungap_on_reference is implemented in Python 3 (tested under Python version 3.9.16) 
 
 Dependencies: 
 Biopython (tested under version 1.78),
-Pandas (tested under version 1.2.4),
-Numpy (tested under version 1.20.2)
+Numpy (tested under version 1.24.3)
 
 ----
 

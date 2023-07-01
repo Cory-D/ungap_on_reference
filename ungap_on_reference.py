@@ -1,13 +1,10 @@
+#!/usr/bin/env python
+# coding: utf-8
 
-
-
-
-
-
-
-
-
-
+# Author: Cory Dunn
+# Github: 
+# License: GPLv3
+# Version 1.3
 
 
 import numpy as np

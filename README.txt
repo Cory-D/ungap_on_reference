@@ -2,7 +2,7 @@
 
 Ungap_on_reference: Removal of FASTA alignment columns based upon gap locations in a selected sequence
 
-Version: 1.3
+Version: 1.31
 
 ----
 

@@ -4,7 +4,7 @@
 # Author: Cory Dunn
 # Github: 
 # License: GPLv3
-# Version 1.3
+# Version 1.31
 
 
 import numpy as np
@@ -14,7 +14,7 @@ import logging
 
 if __name__ == "__main__" : 
 
-    version = '1.3'
+    version = '1.31'
 
     # Collect input from user
 
@@ -93,4 +93,4 @@ if __name__ == "__main__" :
         accession_sequence_back_to_str = accession_sequence_ungapped_NP.astype('|S1').tobytes().decode('utf-8')
         ofile.write('>' + accession_name_underscore + '\n' + accession_sequence_back_to_str + '\n')
         
-
+    ofile.close()
